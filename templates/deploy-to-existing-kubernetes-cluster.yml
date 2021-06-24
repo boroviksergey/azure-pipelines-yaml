@@ -19,7 +19,7 @@ variables:
   imagePullSecret: '{{#toAlphaNumericString containerRegistryConnection.Name 50}}{{/toAlphaNumericString}}{{#shortGuid}}{{/shortGuid}}-auth'
 
   # Agent VM image name
-  vmImageName: 'ubuntu-latest'
+  vmImageName: 'microsoft/azure-vote-front'
 
   {{#if reviewApp}}
   # Name of the new namespace being created to deploy the PR changes.
